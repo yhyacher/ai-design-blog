@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460">
+  <!-- 「未成之形」— hero 备用视觉（2026-09-21 被Dribbble图片替代后备份） -->
+  <defs>
+    <pattern id="hg-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.1" fill="#d6d6d1"/>
+    </pattern>
+  </defs>
+  <rect x="96" y="48" width="368" height="364" fill="none" stroke="#e8e8e4"/>
+  <rect x="112" y="64" width="336" height="332" fill="url(#hg-dots)" opacity="0.5"/>
+  <g stroke="#9aa2ad" stroke-width="1">
+    <line x1="82" y1="48" x2="90" y2="48"/><line x1="96" y1="34" x2="96" y2="42"/>
+    <line x1="470" y1="48" x2="478" y2="48"/><line x1="464" y1="34" x2="464" y2="42"/>
+    <line x1="82" y1="412" x2="90" y2="412"/><line x1="96" y1="418" x2="96" y2="426"/>
+    <line x1="470" y1="412" x2="478" y2="412"/><line x1="464" y1="418" x2="464" y2="426"/>
+  </g>
+  <path d="M 370.4 217.9 A 104 104 0 1 1 320 145.9" fill="none" stroke="#15181c" stroke-width="1.1" stroke-linecap="round" opacity="0.16"/>
+  <path d="M 370.4 217.9 A 104 104 0 1 1 320 145.9" fill="none" stroke="#15181c" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="268" cy="236" r="140" fill="none" stroke="#9aa2ad" stroke-width="1" stroke-dasharray="1 8" stroke-linecap="round" opacity="0.45"/>
+  <g fill="#666d78" font-size="34" font-family="'Noto Serif SC','Songti SC',STSong,SimSun,serif" text-anchor="middle">
+    <text x="268" y="214">未</text>
+    <text x="268" y="260">成</text>
+  </g>
+  <g fill="#666d78">
+    <circle cx="436" cy="94" r="1.6" opacity="0.22"/>
+    <circle cx="418" cy="113" r="2.1" opacity="0.38"/>
+    <circle cx="403" cy="131" r="2.7" opacity="0.52"/>
+    <circle cx="391" cy="145" r="3.4" opacity="0.7"/>
+  </g>
+  <circle cx="383" cy="156" r="13" fill="none" stroke="#3f5d70" stroke-width="1" opacity="0.3"/>
+  <circle cx="383" cy="156" r="7" fill="#3f5d70"/>
+  <text x="112" y="396" font-size="11" letter-spacing="1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#9aa2ad">fig. 0 · 未成型的想法</text>
+</svg>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>写作台 · 设计手札</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/favicon.svg?v=20260921-3">
+<link rel="stylesheet" href="assets/css/site.css?v=20260921-2">
+<script>(function(){try{var t=localStorage.getItem('blog-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}catch(e){}})();</script>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+  <div class="auth-shell" id="gate-host" style="display:none">
+    <h1>需要登录</h1>
+    <p class="sub">写作台用于撰写与管理文章，需要先登录。</p>
+    <a class="btn btn-primary" id="gate-login" href="login.html" style="width:100%;height:38px">去登录</a>
+  </div>
+
+  <div class="studio" id="studio-host" style="display:none">
+    <aside class="studio-side">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+        <strong style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-subtle);flex:1">我的文章</strong>
+        <button class="btn btn-sm" id="btn-new">新建</button>
+      </div>
+      <div id="post-nav"><div class="skeleton" style="height:36px"></div><div class="skeleton" style="height:36px"></div></div>
+    </aside>
+
+    <section class="studio-main">
+      <div id="editor-alert"></div>
+      <div id="editor-host"></div>
+    </section>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<script src="assets/js/config.js?v=20260920-2"></script>
+<script src="assets/js/cloud.js?v=20260920-2"></script>
+<script src="assets/js/md.js?v=20260920-2"></script>
+<script src="assets/js/shell.js?v=20260921-4"></script>
+<script src="assets/js/pages/studio.js?v=20260920-2"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>设计手札 · 关于 AI 与产品设计的长期观察</title>
+<meta name="description" content="关于 AI 产品的交互设计、设计系统与工程实践的长期观察。包含文章列表、标签分类与站点介绍。">
+<link rel="icon" href="assets/img/favicon.svg?v=20260921-3">
+<link rel="stylesheet" href="assets/css/site.css?v=20260921-2">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5/600.css">
+<script>(function(){try{var t=localStorage.getItem('blog-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}catch(e){}})();</script>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>AI 跑得越快，<br>慢下来的判断越值得写</h1>
+        <p class="lede">关于 AI 产品的交互设计、设计系统与工程实践的长期观察。结论先行，标注置信度，不写没有验证过的东西。</p>
+        <div class="meta-line" id="stats">
+          <span>正在载入…</span>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="assets/img/hero-form.webp?v=20260921" alt="一个半成形的环状物，另一半正在粒子化消散" width="880" height="880" loading="eager">
+        <figcaption>fig. 1 · Visual: Sano Morgun — Dribbble</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="tagbar" id="tagbar"></div>
+
+    <div class="section-head">
+      <h2 id="list-title">最新文章</h2>
+      <label style="display:flex;align-items:center;gap:8px">
+        <input type="text" id="search" placeholder="搜索标题或摘要…" style="width:220px;height:32px;font-size:13.5px;padding:0 11px" autocomplete="off">
+      </label>
+    </div>
+
+    <div id="post-host"></div>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js"></script>
+<script src="assets/js/config.js?v=20260920-2"></script>
+<script src="assets/js/cloud.js?v=20260920-2"></script>
+<script src="assets/js/shell.js?v=20260921-4"></script>
+<script src="assets/js/pages/home.js?v=20260920-2"></script>
+</body>
+</html>

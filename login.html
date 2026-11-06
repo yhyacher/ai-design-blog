@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>登录 · 设计手札</title>
+<meta name="description" content="登录、注册与找回密码。">
+<link rel="icon" href="assets/img/favicon.svg?v=20260921-3">
+<link rel="stylesheet" href="assets/css/site.css?v=20260921-2">
+<script>(function(){try{var t=localStorage.getItem('blog-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}catch(e){}})();</script>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+  <div class="auth-shell">
+    <div id="auth-alert"></div>
+    <h1>登录写作台</h1>
+    <p class="sub">用邮箱登录后即可撰写、发布文章并管理图片与附件。阅读文章无需登录。</p>
+
+    <div class="segmented" id="tabs">
+      <button data-mode="password" class="active">密码登录</button>
+      <button data-mode="otp">验证码登录</button>
+      <button data-mode="signup">注册</button>
+      <button data-mode="forgot">找回密码</button>
+    </div>
+
+    <div id="form-host"></div>
+
+    <p class="hint" style="font-size:12px;color:var(--fg-subtle);margin-top:26px;line-height:1.7">
+      登录能力只在站点的正式访问域名下可用；本地预览或沙箱预览环境下登录会被拒绝，这是平台的安全绑定机制。
+    </p>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js"></script>
+<script src="assets/js/config.js?v=20260920-2"></script>
+<script src="assets/js/cloud.js?v=20260920-2"></script>
+<script src="assets/js/shell.js?v=20260921-4"></script>
+<script src="assets/js/pages/login.js?v=20260920-2"></script>
+</body>
+</html>

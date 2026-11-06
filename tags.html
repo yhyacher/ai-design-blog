@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>标签分类 · 设计手札</title>
+<meta name="description" content="按标签浏览全部文章。">
+<link rel="icon" href="assets/img/favicon.svg?v=20260921-3">
+<link rel="stylesheet" href="assets/css/site.css?v=20260921-2">
+<script>(function(){try{var t=localStorage.getItem('blog-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}catch(e){}})();</script>
+</head>
+<body>
+<header id="site-header"></header>
+
+<main id="main">
+  <section class="hero" style="padding-bottom:36px">
+    <div class="wrap">
+      <h1>标签分类</h1>
+      <p class="lede">按主题聚合全部文章。点击任一标签可跳转到筛选后的列表。</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="tagbar" id="tagbar" style="padding-top:28px"></div>
+    <div id="groups-host"></div>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js"></script>
+<script src="assets/js/config.js?v=20260920-2"></script>
+<script src="assets/js/cloud.js?v=20260920-2"></script>
+<script src="assets/js/shell.js?v=20260921-4"></script>
+<script src="assets/js/pages/tags.js?v=20260920-2"></script>
+</body>
+</html>
