@@ -1,0 +1,19 @@
+{
+  "avatar_path": null,
+  "bio": "我是一名产品设计师，日常在 CAD / CAE 工程软件与 AI 产品的交叉地带工作。\n\n这个站点用来存放那些还没成熟到可以写成正式文档、但又值得被记录下来的想法。内容大致分三类：AI 产品的交互设计、设计系统与工程实践的落地细节、以及在真实项目里踩过的坑。\n\n写作原则：结论先行，标注置信度，不写自己没验证过的东西。",
+  "display_name": "设计手札",
+  "id": 1,
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/yhyacher/ai-design-blog"
+    },
+    {
+      "label": "邮箱",
+      "url": "mailto:hello@example.com"
+    }
+  ],
+  "owner_id": "seed-editor",
+  "tagline": "关于 AI 与产品设计的长期观察",
+  "updated_at": "2026-09-18T17:39:15.562094+08:00"
+}

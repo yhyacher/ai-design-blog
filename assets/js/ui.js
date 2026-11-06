@@ -213,6 +213,11 @@
   function renderAuthSlot(session) {
     var slot = document.getElementById('auth-slot');
     if (!slot) return;
+    if (global.Blog && global.Blog.staticMode) {
+      slot.innerHTML =
+        '<a class="btn btn-sm btn-ghost" href="https://ai-design-blog.app.workbuddy.host/" target="_blank" rel="noopener">原站</a>';
+      return;
+    }
     if (session && session.user) {
       var label = session.user.email ? String(session.user.email).split('@')[0] : '我';
       slot.innerHTML =
