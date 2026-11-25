@@ -416,7 +416,7 @@ button {
 .post-list {
   list-style: none;
   margin: 0;
-  padding: 0 0 40px;
+  padding: 0;
 }
 
 .post-item {
@@ -473,6 +473,172 @@ button {
 .post-item .rt {
   font-size: 12px;
   color: var(--fg-subtle);
+}
+
+/* ---------- 文章分页 ---------- */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 24px 0 56px;
+  color: var(--fg-subtle);
+  font-size: 12.5px;
+}
+
+.pagination-summary {
+  flex: 1;
+  min-width: max-content;
+  font-variant-numeric: tabular-nums;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.page-btn {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--fg-muted);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.18s var(--ease), background-color 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+
+.page-btn:hover {
+  color: var(--fg);
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+
+.page-btn.active {
+  background: var(--fg);
+  border-color: var(--fg);
+  color: var(--bg);
+}
+
+.page-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.page-btn[disabled] {
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.page-prev,
+.page-next {
+  padding: 0 10px;
+}
+
+.pagination-ellipsis {
+  min-width: 22px;
+  text-align: center;
+}
+
+.pagination-size {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.page-size-control {
+  position: relative;
+}
+
+.page-size-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  min-width: 82px;
+  height: 32px;
+  padding: 0 9px 0 11px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--fg-muted);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.18s var(--ease), background-color 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+
+.page-size-trigger:hover,
+.page-size-trigger[aria-expanded="true"] {
+  color: var(--fg);
+  background: var(--surface-2);
+  border-color: var(--border-strong);
+}
+
+.page-size-trigger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.page-size-chevron {
+  flex-shrink: 0;
+  transition: transform 0.18s var(--ease);
+}
+
+.page-size-trigger[aria-expanded="true"] .page-size-chevron {
+  transform: rotate(180deg);
+}
+
+.page-size-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 6px);
+  z-index: 30;
+  min-width: 118px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.page-size-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--fg-muted);
+  font-size: 12.5px;
+  text-align: left;
+}
+
+.page-size-option:hover,
+.page-size-option:focus-visible {
+  outline: none;
+  background: var(--surface-2);
+  color: var(--fg);
+}
+
+.page-size-option.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.page-size-check {
+  opacity: 0;
+}
+
+.page-size-option.active .page-size-check {
+  opacity: 1;
 }
 
 .badge-draft {
@@ -1296,6 +1462,18 @@ textarea::placeholder {
   }
   .post-item .date {
     padding-top: 0;
+  }
+  .pagination {
+    gap: 12px;
+    padding-bottom: 44px;
+  }
+  .pagination-pages {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .pagination-size {
+    margin-left: auto;
   }
   .nav a {
     padding: 7px 9px;
